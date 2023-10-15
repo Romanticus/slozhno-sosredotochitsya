@@ -76,15 +76,15 @@
   margin-inline-end: 20px;
 }
 
-.why-section {
+.double-section {
   display: flex;
   gap: 20px;
 }
 
-.why-title {
+.height-title {
   min-height: 100%;
 }
-.why-cards {
+.row-cards {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -108,9 +108,13 @@
   margin-block-end: 20px;
 }
 
-.what-cards {
+.column-cards {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(min(310px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(225px, 100%), 1fr));
   /* grid-template-columns: repeat(auto-fit, fit-content(728px)); */
+}
+
+.title-card {
+  font-weight: 400;
 }
