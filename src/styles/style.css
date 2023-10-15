@@ -1,0 +1,116 @@
+/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+
+.page {
+  background-color: var(--bg-color);
+  background-image: url(/images/cover-image.png);
+  background-position: center;
+  block-size: 100%;
+  inline-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+
+.theme_dark {
+  background-image: url(/images/cover-image-dark.png);
+}
+
+.theme-light .page {
+  background-image: url(/images/cover-image-light.png);
+}
+
+.header {
+  margin: 20px 20px 0 20px;
+  display: grid;
+  grid-template-rows: 70px auto auto;
+  aspect-ratio: 4.05/3;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title {
+  color: #db00ff;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-family: inherit;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+  margin-inline-start: -20px;
+  align-self: end;
+}
+
+.title {
+  color: var(--accent-color);
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.title-decor {
+  color: var(--accent-font-color);
+  background-color: var(--accent-color);
+}
+
+.header-title {
+  max-width: 50%;
+  justify-self: end;
+  height: fit-content;
+  align-self: center;
+}
+
+.section {
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
+}
+
+.why-section {
+  display: flex;
+  gap: 20px;
+}
+
+.why-title {
+  min-height: 100%;
+}
+.why-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 0 1 75%;
+  min-width: 65%;
+}
+
+.text {
+  margin-block-start: 10px;
+  color: var(--font-color);
+  font-size: 18px;
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.what-title {
+  display: block;
+  width: 30%;
+  margin-block-end: 20px;
+}
+
+.what-cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(min(310px, 100%), 1fr));
+  /* grid-template-columns: repeat(auto-fit, fit-content(728px)); */
+}
