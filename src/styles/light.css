@@ -10,10 +10,26 @@
     чем стили в медиазапросе предпочтений пользователяa
 
   */
+  --bg-color: #fff1f7;
+  --accent-color: #ff8dcb;
+  --accent-font-color: #353430;
+  --title-color: #ffc2e6;
+  --font-color: #353430;
+  background-image: url(/images/cover-image-light.png);
+}
+
+.page.theme_light .decorate {
+  display: none;
 }
 
 :root.theme-light {
   /* Переменные светлой темы */
+
+  --bg-color: #fff1f7;
+  --accent-color: #ff8dcb;
+  --accent-font-color: #353430;
+
+  --font-color: #353430;
 }
 
 /* Остальные стили */
@@ -21,6 +37,19 @@
 @media (prefers-color-scheme: light) {
   :root {
     /* Дублируем переменные светлой темы */
+    --bg-color: #fff1f7;
+    --accent-color: #ff8dcb;
+    --accent-font-color: #353430;
+    --title-color: #ffc2e6;
+    --font-color: #353430;
+  }
+
+  .page {
+    background-image: url(/images/cover-image-light.png);
+  }
+
+  .decorate {
+    display: none;
   }
 }
 

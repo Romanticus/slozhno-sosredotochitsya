@@ -2,7 +2,7 @@
 
 .page {
   background-color: var(--bg-color);
-  background-image: url(/images/cover-image.png);
+  background-image: url(/images/cover-image-dark.png);
   background-position: center;
   block-size: 100%;
   inline-size: 100%;
@@ -14,14 +14,6 @@
   flex-direction: column;
   gap: 80px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-}
-
-.theme_dark {
-  background-image: url(/images/cover-image-dark.png);
-}
-
-.theme-light .page {
-  background-image: url(/images/cover-image-light.png);
 }
 
 .header__theme-menu-button {
@@ -105,7 +97,7 @@
 }
 
 .main-title {
-  color: #db00ff;
+  color: var(--title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
   font-family: inherit;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -235,7 +227,7 @@
 
 .footer-title {
   /* padding-block-end: 5vh; */
-  color: #db00ff;
+  color: var(--title-color);
   text-shadow: 2px 2px 0px #ff0070;
   font-family: inherit;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
