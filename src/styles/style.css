@@ -58,6 +58,15 @@
   pointer-events: none;
 }
 
+.header__theme-menu-item:hover {
+  border: 1px solid var(--accent-second-color);
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--accent-second-color);
+  padding: 0 12px;
+}
+
 .header {
   /* margin: 20px 20px 0 20px;
   display: grid;
