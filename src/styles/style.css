@@ -16,13 +16,19 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
+@media (width <= 375px) {
+  .page {
+    gap: 50px;
+  }
+}
+
 .header__theme-menu-list {
   display: flex;
   gap: 10px;
   justify-content: center;
   align-items: center;
 }
-@media (375px < width <= 768px) {
+@media (width <= 768px) {
   .header__theme-menu-list {
     flex-direction: column;
   }
@@ -70,6 +76,13 @@
 @media (375px < width <= 768px) {
   .header {
     height: 96vh;
+  }
+}
+
+@media (width <= 375px) {
+  .header {
+    margin: 10px 10px 0;
+    height: 97vh;
   }
 }
 
@@ -131,12 +144,12 @@
   margin-inline-start: -20px;
   align-self: center;
 }
-/*
-@media (375px < width <= 768px) {
+@media (width <= 375px) {
   .main-title {
-
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    margin-inline-start: 0;
   }
-} */
+}
 
 .title {
   color: var(--accent-second-color);
@@ -159,15 +172,34 @@
   align-self: flex-start;
   margin-block-start: 1.5vw;
 }
+@media (width <= 375px) {
+  .header-title {
+    max-width: 100%;
+    margin-block-start: -5px;
+  }
+}
 
 .section {
   margin-inline-start: 20px;
   margin-inline-end: 20px;
 }
 
+@media (width <= 375px) {
+  .section {
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+  }
+}
+
 .double-section {
   display: flex;
   gap: 20px;
+}
+
+@media (width <= 375px) {
+  .double-section {
+    flex-direction: column;
+  }
 }
 
 .height-title {
@@ -195,6 +227,12 @@
   display: block;
   width: 30%;
   margin-block-end: 20px;
+}
+
+@media (width <= 375px) {
+  .what-title {
+    width: 100%;
+  }
 }
 
 .column-cards {
@@ -233,6 +271,17 @@
   padding: 0;
   margin-block-start: 20px;
   justify-content: center;
+}
+
+@media (width <= 375px) {
+  .images {
+    margin-block-start: 5px;
+
+    display: block;
+  }
+  .images-item {
+    margin-block-start: 6px;
+  }
 }
 
 .images-item {
@@ -285,4 +334,14 @@
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
+}
+
+@media (width <= 375px) {
+  .footer-title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+  .footer {
+    margin: 0 10px 10px 10px;
+    height: 96.5vh;
+  }
 }
