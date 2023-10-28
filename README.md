@@ -1,5 +1,1 @@
-# Зависимости
-
-```bash
-npm i
-```
+https://github.com/Romanticus/slozhno-sosredotochitsya.git
