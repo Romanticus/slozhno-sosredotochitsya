@@ -84,8 +84,8 @@
 
 .decorate::after {
   content: "";
-  border-radius: 100%;
-  box-shadow: 0 0 4px 3px var(--accent-color);
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--accent-color);
   background: var(--accent-color);
   width: 9px;
   height: 9px;
@@ -293,7 +293,7 @@
   }
 }
 
-@media (width <= 450px) {
+@media (width <= 620px) {
   .page {
     gap: 40px;
   }
